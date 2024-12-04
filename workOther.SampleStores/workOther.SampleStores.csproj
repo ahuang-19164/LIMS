@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25FA505B-BF12-4645-A9CA-5F3AF706836F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>workOther.SampleStores</RootNamespace>
+    <AssemblyName>workOther.SampleStores</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBarcodeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBarcodeInfo.Designer.cs">
+      <DependentUpon>FormBarcodeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditRecord.Designer.cs">
+      <DependentUpon>FrmEditRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShelfAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShelfAdd.Designer.cs">
+      <DependentUpon>FrmShelfAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStores.Designer.cs">
+      <DependentUpon>FrmStores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStoresSreach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoresSreach.Designer.cs">
+      <DependentUpon>FrmStoresSreach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStoresShelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoresShelf.Designer.cs">
+      <DependentUpon>FrmStoresShelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStoresPower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoresPower.Designer.cs">
+      <DependentUpon>FrmStoresPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStoresManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoresManage.Designer.cs">
+      <DependentUpon>FrmStoresManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBarcodeInfo.resx">
+      <DependentUpon>FormBarcodeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditRecord.resx">
+      <DependentUpon>FrmEditRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShelfAdd.resx">
+      <DependentUpon>FrmShelfAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStores.resx">
+      <DependentUpon>FrmStores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoresSreach.resx">
+      <DependentUpon>FrmStoresSreach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoresShelf.resx">
+      <DependentUpon>FrmStoresShelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoresPower.resx">
+      <DependentUpon>FrmStoresPower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoresManage.resx">
+      <DependentUpon>FrmStoresManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.BLL\Common.BLL.csproj">
+      <Project>{3F4FFFCF-CD7F-48F4-9873-17A320B334D0}</Project>
+      <Name>Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.ControlHandle\Common.ControlHandle.csproj">
+      <Project>{AA1AC9F2-927E-4B8A-A20F-6C5F7726B35D}</Project>
+      <Name>Common.ControlHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.ConvertShort\Common.ConvertShort.csproj">
+      <Project>{4D125AB4-1D7B-45A4-BC2E-2AB93359A810}</Project>
+      <Name>Common.ConvertShort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Data\Common.Data.csproj">
+      <Project>{6BCB3ADF-1AA5-4D70-A7BB-F685F749D834}</Project>
+      <Name>Common.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.JsonHelper\Common.JsonHelper.csproj">
+      <Project>{4F94A71F-7B2B-438F-8ED0-C3D3B48E128D}</Project>
+      <Name>Common.JsonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.LoadShow\Common.LoadShow.csproj">
+      <Project>{F3F06A4D-A3AE-4B57-999A-987D3FA68DD7}</Project>
+      <Name>Common.LoadShow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Model\Common.Model.csproj">
+      <Project>{0EC6EE39-333D-4155-97D2-062F7162845B}</Project>
+      <Name>Common.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.SqlModel\Common.SqlModel.csproj">
+      <Project>{7B0BE271-5534-4057-98A1-44E31F5C436F}</Project>
+      <Name>Common.SqlModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DF0DF0C-973E-4DD8-9842-70534D53274F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>workOther.ItemChange</RootNamespace>
+    <AssemblyName>workOther.ItemChange</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRemove.Designer.cs">
+      <DependentUpon>FrmRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCancel.Designer.cs">
+      <DependentUpon>FrmCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemCancelInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemCancelInfo.Designer.cs">
+      <DependentUpon>FrmItemCancelInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdd.Designer.cs">
+      <DependentUpon>FrmAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemRemoveInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemRemoveInfo.Designer.cs">
+      <DependentUpon>FrmItemRemoveInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemAddInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemAddInfo.Designer.cs">
+      <DependentUpon>FrmItemAddInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowGroup.Designer.cs">
+      <DependentUpon>FrmShowGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmRemove.resx">
+      <DependentUpon>FrmRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCancel.resx">
+      <DependentUpon>FrmCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemCancelInfo.resx">
+      <DependentUpon>FrmItemCancelInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdd.resx">
+      <DependentUpon>FrmAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemRemoveInfo.resx">
+      <DependentUpon>FrmItemRemoveInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemAddInfo.resx">
+      <DependentUpon>FrmItemAddInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowGroup.resx">
+      <DependentUpon>FrmShowGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.BLL\Common.BLL.csproj">
+      <Project>{4c54db3f-7bcb-4134-9805-58f9ab402fbe}</Project>
+      <Name>Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.ControlHandle\Common.ControlHandle.csproj">
+      <Project>{aa1ac9f2-927e-4b8a-a20f-6c5f7726b35d}</Project>
+      <Name>Common.ControlHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Data\Common.Data.csproj">
+      <Project>{6bcb3adf-1aa5-4d70-a7bb-f685f749d834}</Project>
+      <Name>Common.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.SqlHandle\Common.SqlHandle.csproj">
+      <Project>{aad4269f-6d22-4841-8523-6fe922169fef}</Project>
+      <Name>Common.SqlHandle</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

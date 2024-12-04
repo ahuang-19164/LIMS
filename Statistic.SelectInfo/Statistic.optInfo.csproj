@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{568706F0-4A3B-462A-9121-929C47A65EBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Statistic.optInfo</RootNamespace>
+    <AssemblyName>Statistic.optInfo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmrecordStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmrecordStatistic.Designer.cs">
+      <DependentUpon>FrmrecordStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmitemStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmitemStatistic.Designer.cs">
+      <DependentUpon>FrmitemStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmgroupStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmgroupStatistic.Designer.cs">
+      <DependentUpon>FrmgroupStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmapplyStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmapplyStatistic.Designer.cs">
+      <DependentUpon>FrmapplyStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmclientStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmclientStatistic.Designer.cs">
+      <DependentUpon>FrmclientStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmtestWorkStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmtestWorkStatistic.Designer.cs">
+      <DependentUpon>FrmtestWorkStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmperWorkStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmperWorkStatistic.Designer.cs">
+      <DependentUpon>FrmperWorkStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmtestSampleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmtestSampleInfo.Designer.cs">
+      <DependentUpon>FrmtestSampleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmperSampleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmperSampleInfo.Designer.cs">
+      <DependentUpon>FrmperSampleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmrecordStatistic.resx">
+      <DependentUpon>FrmrecordStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmitemStatistic.resx">
+      <DependentUpon>FrmitemStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmgroupStatistic.resx">
+      <DependentUpon>FrmgroupStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmapplyStatistic.resx">
+      <DependentUpon>FrmapplyStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmclientStatistic.resx">
+      <DependentUpon>FrmclientStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmtestWorkStatistic.resx">
+      <DependentUpon>FrmtestWorkStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmperWorkStatistic.resx">
+      <DependentUpon>FrmperWorkStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmtestSampleInfo.resx">
+      <DependentUpon>FrmtestSampleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmperSampleInfo.resx">
+      <DependentUpon>FrmperSampleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.BLL\Common.BLL.csproj">
+      <Project>{4c54db3f-7bcb-4134-9805-58f9ab402fbe}</Project>
+      <Name>Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.ControlHandle\Common.ControlHandle.csproj">
+      <Project>{aa1ac9f2-927e-4b8a-a20f-6c5f7726b35d}</Project>
+      <Name>Common.ControlHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Data\Common.Data.csproj">
+      <Project>{6BCB3ADF-1AA5-4D70-A7BB-F685F749D834}</Project>
+      <Name>Common.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.SelectTool\Common.SelectTool.csproj">
+      <Project>{8754c2c3-5848-4905-a147-98e7250315a1}</Project>
+      <Name>Common.SelectTool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

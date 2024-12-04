@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8AFBA66-4C86-430E-94F6-88D801D1E9A0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>workOther.SyntheticalInfo</RootNamespace>
+    <AssemblyName>workOther.SyntheticalInfo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ReturnInfo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTestHandle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTestHandle.Designer.cs">
+      <DependentUpon>FrmTestHandle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTestOtherInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTestOtherInfo.Designer.cs">
+      <DependentUpon>FrmTestOtherInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTestOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTestOther.Designer.cs">
+      <DependentUpon>FrmTestOther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSyntheticalInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSyntheticalInfo.Designer.cs">
+      <DependentUpon>FrmSyntheticalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTestHandle.resx">
+      <DependentUpon>FrmTestHandle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTestOtherInfo.resx">
+      <DependentUpon>FrmTestOtherInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTestOther.resx">
+      <DependentUpon>FrmTestOther.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSyntheticalInfo.resx">
+      <DependentUpon>FrmSyntheticalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.BLL\Common.BLL.csproj">
+      <Project>{4c54db3f-7bcb-4134-9805-58f9ab402fbe}</Project>
+      <Name>Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.ControlHandle\Common.ControlHandle.csproj">
+      <Project>{aa1ac9f2-927e-4b8a-a20f-6c5f7726b35d}</Project>
+      <Name>Common.ControlHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Data\Common.Data.csproj">
+      <Project>{6BCB3ADF-1AA5-4D70-A7BB-F685F749D834}</Project>
+      <Name>Common.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.JsonHelper\Common.JsonHelper.csproj">
+      <Project>{4F94A71F-7B2B-438F-8ED0-C3D3B48E128D}</Project>
+      <Name>Common.JsonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.LoadShow\Common.LoadShow.csproj">
+      <Project>{F3F06A4D-A3AE-4B57-999A-987D3FA68DD7}</Project>
+      <Name>Common.LoadShow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Model\Common.Model.csproj">
+      <Project>{0EC6EE39-333D-4155-97D2-062F7162845B}</Project>
+      <Name>Common.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.PerModel\Common.PerModel.csproj">
+      <Project>{84C23F4E-D16C-4D81-B3E5-05C245EBCD1D}</Project>
+      <Name>Common.PerModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.SampleInfoEdit\Common.SampleInfoEdit.csproj">
+      <Project>{f6569ee9-4c67-4d19-a258-bde1dfa566a7}</Project>
+      <Name>Common.SampleInfoEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.SqlModel\Common.SqlModel.csproj">
+      <Project>{7B0BE271-5534-4057-98A1-44E31F5C436F}</Project>
+      <Name>Common.SqlModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.TestModel\Common.TestModel.csproj">
+      <Project>{36004C35-8546-46C0-8BF6-E1AD5B99ADAC}</Project>
+      <Name>Common.TestModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\converttorange_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\converttorange_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new2.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

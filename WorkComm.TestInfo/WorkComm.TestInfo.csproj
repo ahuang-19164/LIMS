@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F073B2E5-1908-4D60-8178-8942DD79A05C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WorkComm.TestInfo</RootNamespace>
+    <AssemblyName>WorkComm.TestInfo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.1.Drawing, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBarcodeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBarcodeInfo.Designer.cs">
+      <DependentUpon>FormBarcodeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChengePWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMChengePWD.Designer.cs">
+      <DependentUpon>FrmChengePWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFlowInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFlowInfo.Designer.cs">
+      <DependentUpon>FrmFlowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGroupShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGroupShow.Designer.cs">
+      <DependentUpon>FrmGroupShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSampleTestXG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSampleTestXG.Designer.cs">
+      <DependentUpon>FrmSampleTestXG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSampleTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSampleTest.Designer.cs">
+      <DependentUpon>FrmSampleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserCheck.Designer.cs">
+      <DependentUpon>FrmUserCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserPWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPWD.Designer.cs">
+      <DependentUpon>FrmUserPWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBarcodeInfo.resx">
+      <DependentUpon>FormBarcodeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMChengePWD.resx">
+      <DependentUpon>FrmChengePWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFlowInfo.resx">
+      <DependentUpon>FrmFlowInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGroupShow.resx">
+      <DependentUpon>FrmGroupShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSampleTestXG.resx">
+      <DependentUpon>FrmSampleTestXG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSampleTest.resx">
+      <DependentUpon>FrmSampleTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserCheck.resx">
+      <DependentUpon>FrmUserCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPWD.resx">
+      <DependentUpon>FrmUserPWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.BLL\Common.BLL.csproj">
+      <Project>{4c54db3f-7bcb-4134-9805-58f9ab402fbe}</Project>
+      <Name>Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.ControlHandle\Common.ControlHandle.csproj">
+      <Project>{aa1ac9f2-927e-4b8a-a20f-6c5f7726b35d}</Project>
+      <Name>Common.ControlHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Data\Common.Data.csproj">
+      <Project>{6BCB3ADF-1AA5-4D70-A7BB-F685F749D834}</Project>
+      <Name>Common.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.HotKey\Common.HotKey.csproj">
+      <Project>{886f6ed6-334a-4346-b22a-e364e47c4305}</Project>
+      <Name>Common.HotKey</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.JsonHelper\Common.JsonHelper.csproj">
+      <Project>{4F94A71F-7B2B-438F-8ED0-C3D3B48E128D}</Project>
+      <Name>Common.JsonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.LoadShow\Common.LoadShow.csproj">
+      <Project>{F3F06A4D-A3AE-4B57-999A-987D3FA68DD7}</Project>
+      <Name>Common.LoadShow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Model\Common.Model.csproj">
+      <Project>{0EC6EE39-333D-4155-97D2-062F7162845B}</Project>
+      <Name>Common.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.PerModel\Common.PerModel.csproj">
+      <Project>{84C23F4E-D16C-4D81-B3E5-05C245EBCD1D}</Project>
+      <Name>Common.PerModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.SampleInfoEdit\Common.SampleInfoEdit.csproj">
+      <Project>{f6569ee9-4c67-4d19-a258-bde1dfa566a7}</Project>
+      <Name>Common.SampleInfoEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.SampleRecord\Common.SampleRecord.csproj">
+      <Project>{62296709-2C6D-4B5C-AAD1-DAFABA1A977E}</Project>
+      <Name>Common.SampleRecord</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.SqlModel\Common.SqlModel.csproj">
+      <Project>{7b0be271-5534-4057-98a1-44e31f5c436f}</Project>
+      <Name>Common.SqlModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.TestModel\Common.TestModel.csproj">
+      <Project>{36004C35-8546-46C0-8BF6-E1AD5B99ADAC}</Project>
+      <Name>Common.TestModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.WorkModel\Common.WorkModel.csproj">
+      <Project>{7c879bf4-eb04-413d-a42e-3521a29f52b8}</Project>
+      <Name>Common.WorkModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ms.HJInfoHandle\Ms.HJInfoHandle.csproj">
+      <Project>{467b149b-b4e9-410d-9a70-21b116876bc0}</Project>
+      <Name>Ms.HJInfoHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Perwork.SampleInfoReceive\Perwork.SampleInfoReceive.csproj">
+      <Project>{431af100-e9d5-4b06-81ba-50cb8ca9e860}</Project>
+      <Name>Perwork.SampleInfoReceive</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\workOther.ItemDelegate\workOther.ItemDelegate.csproj">
+      <Project>{58b5b97e-9f2c-47f4-bca5-8da143697677}</Project>
+      <Name>workOther.ItemDelegate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\workOther.ItemHandle\workOther.ItemHandle.csproj">
+      <Project>{9bbf3465-0262-4a94-bb59-f75a26c8a2c1}</Project>
+      <Name>workOther.ItemHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\workOther.SyntheticalInfo\workOther.SyntheticalInfo.csproj">
+      <Project>{c8afba66-4c86-430e-94f6-88d801d1e9a0}</Project>
+      <Name>workOther.SyntheticalInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkTest.UploadReport\WorkTest.UploadReport.csproj">
+      <Project>{425c335f-9e9c-4330-bdea-6d887b8189ba}</Project>
+      <Name>WorkTest.UploadReport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\additem_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\additem_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_customer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group_16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42AF9C02-C533-4C7F-AC02-BBAE611E27B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HLFramework</RootNamespace>
+    <AssemblyName>HLFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>2.0.0.5</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8F4DB0F61ACEEEC470025177FBAC26131F0D618E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HLFramework_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>2</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v20.1.Win, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Presets, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Win, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraMap.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeMap.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\引用文件\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2151.40, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2151.40\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2151.40, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2151.40\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2151.40, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2151.40\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.0.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfo.Designer.cs">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTest.Designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoginWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginWait.Designer.cs">
+      <DependentUpon>FrmLoginWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmGridColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmGridColumns.Designer.cs">
+      <DependentUpon>FrmGridColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoadInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoadInfo.Designer.cs">
+      <DependentUpon>FrmLoadInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmDesigner.cs" />
+    <Compile Include="FRMModuleInfo\FrmDesigner.Designer.cs">
+      <DependentUpon>FrmDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmWebModuleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmWebModuleInfo.Designer.cs">
+      <DependentUpon>FrmWebModuleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FRMMoudelDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FRMMoudelDesign.Designer.cs">
+      <DependentUpon>FRMMoudelDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmWebModuleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmWebModuleEdit.Designer.cs">
+      <DependentUpon>FrmWebModuleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmModuleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmModuleEdit.Designer.cs">
+      <DependentUpon>FrmModuleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmModuleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMModuleInfo\FrmModuleInfo.Designer.cs">
+      <DependentUpon>FrmModuleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMOther\FrmChengePWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMOther\FrmChengePWD.Designer.cs">
+      <DependentUpon>FrmChengePWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmWebPowerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmWebPowerInfo.Designer.cs">
+      <DependentUpon>FrmWebPowerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmWebRoleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmWebRoleInfo.Designer.cs">
+      <DependentUpon>FrmWebRoleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmRoleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmRoleInfo.Designer.cs">
+      <DependentUpon>FrmRoleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmPowerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmPowerInfo.Designer.cs">
+      <DependentUpon>FrmPowerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmUserInfo.Designer.cs">
+      <DependentUpon>FrmUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmDepartmentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmDepartmentInfo.Designer.cs">
+      <DependentUpon>FrmDepartmentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmCompanyinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSystemInfoInfo\FrmCompanyinfo.Designer.cs">
+      <DependentUpon>FrmCompanyinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSystemMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSystemMain.Designer.cs">
+      <DependentUpon>FrmSystemMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpFileInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpFileInfo.Designer.cs">
+      <DependentUpon>FrmUpFileInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormInfo.resx">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoadInfo.resx">
+      <DependentUpon>FrmLoadInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginWait.resx">
+      <DependentUpon>FrmLoginWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMModuleInfo\FrmDesigner.resx">
+      <DependentUpon>FrmDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMModuleInfo\FrmGridColumns.resx">
+      <DependentUpon>FrmGridColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMModuleInfo\FrmWebModuleInfo.resx">
+      <DependentUpon>FrmWebModuleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMModuleInfo\FRMMoudelDesign.resx">
+      <DependentUpon>FRMMoudelDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMModuleInfo\FrmWebModuleEdit.resx">
+      <DependentUpon>FrmWebModuleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMModuleInfo\FrmModuleEdit.resx">
+      <DependentUpon>FrmModuleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMModuleInfo\FrmModuleInfo.resx">
+      <DependentUpon>FrmModuleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMOther\FRMChengePWD.resx">
+      <DependentUpon>FrmChengePWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSystemInfoInfo\FrmWebPowerInfo.resx">
+      <DependentUpon>FrmWebPowerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSystemInfoInfo\FrmWebRoleInfo.resx">
+      <DependentUpon>FrmWebRoleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSystemInfoInfo\FrmRoleInfo.resx">
+      <DependentUpon>FrmRoleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSystemInfoInfo\FrmPowerInfo.resx">
+      <DependentUpon>FrmPowerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSystemInfoInfo\FrmUserInfo.resx">
+      <DependentUpon>FrmUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSystemInfoInfo\FrmDepartmentInfo.resx">
+      <DependentUpon>FrmDepartmentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSystemInfoInfo\FrmCompanyinfo.resx">
+      <DependentUpon>FrmCompanyinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSystemMain.resx">
+      <DependentUpon>FrmSystemMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpFileInfo.resx">
+      <DependentUpon>FrmUpFileInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.BLL\Common.BLL.csproj">
+      <Project>{3f4fffcf-cd7f-48f4-9873-17a320b334d0}</Project>
+      <Name>Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.conn\Common.Conn.csproj">
+      <Project>{61A17BFF-9F1F-4E3B-A8D1-C1D8E494D5E6}</Project>
+      <Name>Common.Conn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.ControlHandle\Common.ControlHandle.csproj">
+      <Project>{AA1AC9F2-927E-4B8A-A20F-6C5F7726B35D}</Project>
+      <Name>Common.ControlHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.ConvertShort\Common.ConvertShort.csproj">
+      <Project>{4D125AB4-1D7B-45A4-BC2E-2AB93359A810}</Project>
+      <Name>Common.ConvertShort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Data\Common.Data.csproj">
+      <Project>{6BCB3ADF-1AA5-4D70-A7BB-F685F749D834}</Project>
+      <Name>Common.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.GridHandle\Common.GridHandle.csproj">
+      <Project>{6C4F825A-E013-4699-B70B-2C178B04EEE8}</Project>
+      <Name>Common.GridHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.HotKey\Common.HotKey.csproj">
+      <Project>{886F6ED6-334A-4346-B22A-E364E47C4305}</Project>
+      <Name>Common.HotKey</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.JsonHelper\Common.JsonHelper.csproj">
+      <Project>{4F94A71F-7B2B-438F-8ED0-C3D3B48E128D}</Project>
+      <Name>Common.JsonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.LoadShow\Common.LoadShow.csproj">
+      <Project>{F3F06A4D-A3AE-4B57-999A-987D3FA68DD7}</Project>
+      <Name>Common.LoadShow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.MergePDF\Common.MergePDF.csproj">
+      <Project>{76E86DDC-0A92-4041-A507-6751206F2D08}</Project>
+      <Name>Common.MergePDF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.MessageHandle\Common.MessageHandle.csproj">
+      <Project>{3726789d-2259-44bd-98b7-7aae988445ea}</Project>
+      <Name>Common.MessageHandle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Model\Common.Model.csproj">
+      <Project>{0EC6EE39-333D-4155-97D2-062F7162845B}</Project>
+      <Name>Common.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.SqlModel\Common.SqlModel.csproj">
+      <Project>{7B0BE271-5534-4057-98A1-44E31F5C436F}</Project>
+      <Name>Common.SqlModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bitbug_favicon.ico" />
+    <Content Include="favicon %281%29.ico" />
+    <Content Include="favicon.ico" />
+    <Content Include="log4net.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\ccccc.png" />
+    <None Include="Resources\bbbbb.png" />
+    <None Include="Resources\aaaaa.png" />
+    <None Include="Resources\cropped-labmin-logo.png" />
+    <None Include="Resources\yc-logo-1.png" />
+    <None Include="Resources\yc-logo3.png" />
+    <None Include="Resources\屏幕截图 2023-12-05 154313.png" />
+    <None Include="Resources\Cont_16898436962423.jpg" />
+    <None Include="Resources\OIP-C.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\yc-logo2.png" />
+    <None Include="Resources\yc-logo1.png" />
+    <None Include="Resources\Cont_16898436962422.jpg" />
+    <None Include="Resources\Cont_16898436962421.jpg" />
+    <None Include="Resources\cancel_16x161.png" />
+    <None Include="Resources\cancel_32x321.png" />
+    <None Include="Resources\apply_16x161.png" />
+    <None Include="Resources\apply_32x321.png" />
+    <None Include="Resources\addfile_16x161.png" />
+    <None Include="Resources\addfile_32x321.png" />
+    <None Include="Resources\add_16x161.png" />
+    <None Include="Resources\add_32x321.png" />
+    <None Include="Resources\group_16x16.png" />
+    <None Include="Resources\group_32x32.png" />
+    <None Include="Resources\cancel_16x16.png" />
+    <None Include="Resources\cancel_32x32.png" />
+    <None Include="Resources\apply_16x16.png" />
+    <None Include="Resources\apply_32x32.png" />
+    <None Include="Resources\addfile_16x16.png" />
+    <None Include="Resources\addfile_32x32.png" />
+    <None Include="Resources\add_16x16.png" />
+    <None Include="Resources\add_32x32.png" />
+    <None Include="Resources\publicfix_32x32.png" />
+    <None Include="Resources\publicfix_16x16.png" />
+    <None Include="Resources\role_32x32.png" />
+    <None Include="Resources\role_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2151.40\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2151.40\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2151.40\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2151.40\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+</Project>
